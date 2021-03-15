@@ -7,6 +7,19 @@
 # Ignore bundler config.
 /.bundle
 
+# Ignore engines
+/engines/*
+
+# Ignore Gemfile
+/Gemfile
+/Gemfile.lock
+
+# Ignore database.yml
+/config/database.yml
+
+# Ignore upload test files
+/public/uploads
+
 # Ignore all logfiles and tempfiles.
 /log/*
 /tmp/*
