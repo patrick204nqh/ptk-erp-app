@@ -14,9 +14,9 @@ gem 'sass-rails', '>= 6'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem 'webpacker', '~> 5.0'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
-gem 'turbolinks', '~> 5'
+# gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.7'
+# gem 'jbuilder', '~> 2.10.1'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
@@ -42,6 +42,7 @@ group :development do
   gem 'listen', '~> 3.3'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+  gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
 end
 
 group :test do
@@ -55,6 +56,20 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
+# Plugins
+gem 'mimemagic', '0.3.5'
+gem 'i18n'
+gem 'kaminari', '~> 1.2.0'
+
 gem 'erp_backend', path: 'engines/erp_backend'
+gem 'erp_locations', path: 'engines/locations'
+gem 'erp_articles', path: 'engines/articles'
+gem 'erp_products', path: 'engines/products'
+gem 'erp_carts', path: 'engines/carts'
+gem 'erp_orders', path: 'engines/orders'
+gem 'erp_contacts', path: 'engines/contacts'
 gem 'erp_frontend', path: 'engines/erp_frontend'
-gem 'api', path: 'engines/api'
+gem 'erp_api', path: 'engines/erp_api'
+gem 'erp_warehouses', path: 'engines/erp_warehouses'
+gem 'erp_manufacturing', path: 'engines/erp_manufacturing'
+gem 'erp_accounting', path: 'engines/erp_accounting'

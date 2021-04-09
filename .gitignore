@@ -11,7 +11,7 @@
 /engines/*
 
 # Ignore Gemfile
-/Gemfile
+# /Gemfile
 /Gemfile.lock
 
 # Ignore database.yml
